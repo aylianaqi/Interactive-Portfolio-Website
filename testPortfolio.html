@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/bootstrap.min.css"rel="stylesheet">
+  <title>Ayu Mauliana Bilqis</title>
+  <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Comfortaa', cursive;
+            font-size: 25px;
+        }
+    </style>
+    <script type="text/javascript">
+         <!--
+            if(document.images){
+               var image1 = new Image(); // Preload an image
+               image1.src = "folder.png";
+               var image2 = new Image(); // Preload second image
+               image2.src ="logoitk.png";
+            }
+         //-->
+      </script>
+</head>
+<body background = "Hz7wBE.jpg">
+    <div class="container">
+  <div class="page-content">
+    <header class="main-header">
+        <a href="#" onMouseOver="document.myImage.src=image2.src;" onMouseOut="document.myImage.src=image1.src;">
+      <img name="myImage" src="folder.png" class="image-tumnel" width="200px" height="200px">
+        </a>
+      <div class="main-title col-6">
+        <h1>Music 2016</h1>
+        <h2>Album Music</h2>
+      </div>
+    </header>
+    <div class="hero-image">
+      <img src="IMG_491343.png" class="image-responsive">
+    </div>
+    <section class="featured-work">
+      <h2>New Album</h2>
+      <div class="row">
+        <div>
+          <div class="work-screenshot"><img class="left" src="background.jpg" class="image-tumnel"></div>
+          <a data-toggle="modal" href="https://id.wikipedia.org/wiki/Raisa" data-target="#modal">RAISA</a>
+        </div>
+        <div>
+          <div class="work-screenshot"><img class="center" src="Ariana.png" class="image-tumnel"></div>
+          <a data-toggle="modal" href="https://en.wikipedia.org/wiki/Ariana_Grande" data-target="#modal">ARIANA GRANDE</a>
+        </div>
+          <div>
+          <div class="work-screenshot"><img class="center" src="cover_album_tulus_monokrom.jpg" class="image-tumnel"></div>
+          <a data-toggle="modal" href="https://en.wikipedia.org/wiki/Muhammad_Tulus" data-target="#modal">TULUS</a>
+          </div>
+        </div>
+        <div class="mainContent">
+            <h2>Contact Form</h2>
+            <div class="contactFrm">
+                <?php if(!empty($statusMsg)){ ?>
+            <p class="statusMsg <?php echo !empty($msgClass)?$msgClass:''; ?>"><?php echo $statusMsg; ?></p>
+        <?php } ?>
+                <h2>Send e-mail to ayumaulianabilqis@gmail.com:</h2><form action="mailto:ayumaulianabilqis@gmail.com" method="post" enctype="text/plain">
+            <h4>Name</h4>
+            <input type="text" name="name" placeholder="Nama Anda" required="">
+            <h4>Telephone</h4>
+            <input type="telephone" name="telephone" placeholder="Masukkan nomor" required="">
+            <h4>Email </h4>
+            <input type="email" name="email" placeholder="email@example.com" required="">
+            <h4>Message</h4>
+            <textarea name="message" placeholder="Tulis pesan Anda disini" required=""> </textarea>
+            <input type="submit" name="submit" value="Submit">
+            <div class="clear"> </div>
+        </form>
+            </div>
+        </div>
+      </section>
+        </div>
+    </div>
+    </body>
+</html>
